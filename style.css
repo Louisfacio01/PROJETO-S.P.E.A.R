@@ -1,0 +1,250 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+
+body{
+    background:#050505;
+    color:#fff;
+    background-image:url(S.P.E.A.R);
+    
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:420px;
+    background-attachment:fixed;
+    scroll-behavior:smooth;
+}
+
+/* NAVBAR */
+header{
+    position:fixed;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:22px 60px;
+    backdrop-filter:blur(8px);
+    background:rgba(0,0,0,0.35);
+    border-bottom:1px solid rgba(0,255,136,0.15);
+    z-index:1000;
+}
+
+.logo{
+    font-size:22px;
+    letter-spacing:6px;
+    color:#00ff88;
+}
+
+.nav-btn{
+    text-decoration:none;
+    color:#00ff88;
+    border:1px solid #00ff88;
+    padding:8px 22px;
+    transition:0.3s;
+    font-size:14px;
+}
+
+.nav-btn:hover{
+    background:#00ff88;
+    color:#000;
+}
+
+/* HERO */
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:0 20px;
+}
+
+.hero-content{
+    max-width:720px;
+    background:rgba(255,255,255,0.08);
+    padding:60px 40px;
+    border-radius:18px;
+    backdrop-filter:blur(5px);
+    border:1px solid rgba(255,255,255,0.15);
+}
+
+.hero-content h1{
+    font-size:72px;
+    letter-spacing:12px;
+    margin-bottom:25px;
+    color:#00ff88;
+}
+
+.hero-content p{
+    font-size:17px;
+    line-height:1.8;
+    color:#cfcfcf;
+    margin-bottom:45px;
+    letter-spacing: 1px;
+}
+
+.buttons{
+    display:flex;
+    gap:18px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.primary-btn, .secondary-btn {
+    text-decoration: none;
+    border: 1px solid #00ff88;
+    color: #00ff88;
+    padding: 14px 34px;
+    transition: .3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.primary-btn:hover .secondary-btn:hover{
+    background:#00ff88;
+    color:#000;
+    transform: translateY(5px);
+    border: 1px solid rgba(0, 0, 0, 0);
+    box-shadow:0 0 25px #00ff88;
+}
+
+.DD-btn{
+text-decoration: none;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 14px 34px;       
+    display: inline-flex;     
+    align-items: center;      
+    justify-content: center;  
+
+    min-width: 170px;         
+    
+    margin: 15px auto 0 auto;
+}
+
+/* LORE */
+.LORE{
+    margin:120px auto 80px;
+    max-width:900px;
+    padding:40px 25px;
+    background:rgba(255,255,255,0.08);
+    border-radius:16px;
+    backdrop-filter:blur(5px);
+    border:1px solid rgba(255,255,255,0.15);
+    text-align:center;
+}
+
+.lore-main{
+    font-size:26px;
+    letter-spacing:4px;
+    color:#00ff88;
+    margin-bottom:40px;
+}
+
+
+.LORE p{
+    font-size:17px;
+    line-height:1.8;
+    color:#cfcfcf;
+    margin-bottom:45px;
+    letter-spacing: 1px;
+}
+.LORE h3{
+    margin-bottom:10px;
+    font-size:20px;
+    color:#00ff88;
+}
+
+/* RESPONSIVO */
+@media(max-width:768px){
+    header{
+        padding:18px 25px;
+    }
+
+    .hero-content h1{
+        font-size:48px;
+        letter-spacing:6px;
+    }
+
+    .hero-content{
+        padding:40px 20px;
+    }
+
+    .LORE{
+        margin:80px 15px;
+        padding:30px 15px;
+    }
+}
+
+/*EmBreve.html*/
+
+/* Resolução rápida para a página Em Breve */
+
+.EB-sec{
+    max-width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.EB{
+    max-width:720px;
+    background:rgba(255,255,255,0.08);
+    padding:60px 40px;
+    border-radius:18px;
+    backdrop-filter:blur(5px);
+    border:1px solid rgba(255,255,255,0.15);
+    color: #00ff88;
+}
+
+.EB-title{
+    font-family: 'Orbitron', sans-serif;
+}
+
+.pista-da-barra{
+    width: 438px;
+    height: 8px;
+    background-color: #222;
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+margin: 50px 0 0 0;
+}
+
+.barrinha{
+    position: absolute;
+    height: 100%;
+    width: 80px;
+    background-color: #00ff88;
+    border-radius: 4px;
+    animation: carregarInfinito 2s ease-in-out infinite;
+
+}
+
+@keyframes carregarInfinito {
+  0% {
+    left: 0%;
+    transform: scaleX(0.3); /* Começa esmagada/pequena na esquerda */
+    transform-origin: left;  /* Encolhe puxando para a esquerda */
+  }
+  20% {
+    transform: scaleX(1);   /* No meio do caminho ganha o tamanho normal */
+  }
+  50% {
+    left: calc(100% - 18%); /* Chega no extremo direito (100% da pista menos o tamanho dela) */
+    transform: scaleX(0.3);  /* Encolhe perto da extremidade direita */
+    transform-origin: right; /* Encolhe puxando para a direita */
+  }
+  70% {
+    transform: scaleX(1);   /* Volta ao tamanho normal quando começa a voltar */
+  }
+  100% {
+    left: 0%;
+    transform: scaleX(0.3); /* Termina o ciclo de volta na esquerda, pequena de novo */
+    transform-origin: left;
+  }
+}
