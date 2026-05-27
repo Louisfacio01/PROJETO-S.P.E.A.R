@@ -226,8 +226,17 @@ margin: 50px 0 0 0;
 }
 
 @media (max-width: 768px){
+    .EB {
+        width: 85%; /* Faz a caixinha cinza caber na tela do celular com margem */
+        padding: 40px 20px; /* Diminui o espaçamento interno pro texto respirar */
+    }
 
+    .pista-da-barra {
+        width: 100%; /* Faz a pista ocupar a largura da caixinha de forma responsiva */
+        margin: 30px auto 0 auto; /* Centraliza a barra perfeitamente no meio */
+    }
 }
+
 
 @keyframes carregarInfinito {
   0% {
