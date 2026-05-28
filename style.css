@@ -248,7 +248,7 @@ margin: 50px 0 0 0;
     transform: scaleX(1);   /* No meio do caminho ganha o tamanho normal */
   }
   50% {
-    left: calc(100% - 18%); /* Chega no extremo direito (100% da pista menos o tamanho dela) */
+    left: calc(100% - 80px); /* Chega no extremo direito (100% da pista menos o tamanho dela) */
     transform: scaleX(0.3);  /* Encolhe perto da extremidade direita */
     transform-origin: right; /* Encolhe puxando para a direita */
   }
